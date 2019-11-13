@@ -66,7 +66,7 @@
 </template>
 
 <script>
-import { required, email, minValue } from 'vuelidate/lib/validators';
+import { required, email, minValue } from 'vuelidate/lib/validators'
 
 import BaseInput from '@/components/BaseInput.vue'
 import BaseRadioGroup from '@/components/BaseRadioGroup.vue'
@@ -96,7 +96,7 @@ export default {
       radioList: [
         { value: 'avocado', label: 'Avocado' },
         { value: 'pie', label: 'Pie' }
-      ],
+      ]
     }
   },
   methods: {
@@ -110,7 +110,7 @@ export default {
     updateForm (input, value) {
       this.$store.dispatch('updateForm',
         { input, value }
-      );
+      )
     }
   },
   validations () {
